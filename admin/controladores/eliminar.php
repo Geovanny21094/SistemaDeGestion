@@ -30,7 +30,7 @@
         echo "<p>Los datos se han borrado correctamemte!!!</p>";           
        } else { 
               if($conn->errno == 1062){  
-                 echo "<p class='error'>La persona con la cedula $cedula ya esta registrada en el sistema </p>";       
+                 echo "<p class='error'>La persona con el codigo $codigo ya ha sido eliminada del sistema </p>";       
                            }else{ 
                            echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";   
                                   }    
