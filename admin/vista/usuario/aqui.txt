@@ -1,0 +1,13 @@
+eliminar php
+actualizar php
+cambiar contraseña php
+
+
+esto esta en el index.php
+<a href ="eliminar.html"  ?codigo = $row ['codigo']"
+
+
+
+dentro de la carpeta controlador.... eliminar.html, aqui recibo el parametro de arriba
+<>php
+$codigo = $_GET['codigo'];
