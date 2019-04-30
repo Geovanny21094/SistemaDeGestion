@@ -7,6 +7,7 @@
     <body> 
         <table style="width:100%" >  
                <tr> 
+               <th>Codigo</th> 
                <th>Cedula</th>   
              <th>Nombres</th>    
                <th>Apellidos</th> 
@@ -23,6 +24,7 @@
                         if ($result->num_rows > 0) {  
                              while($row = $result->fetch_assoc()) {   
                                      echo "<tr>";   
+                                     echo "   <td>" . $row["usu_codigo"] . "</td>"; 
                                      echo "   <td>" . $row["usu_cedula"] . "</td>";    
                                     echo "   <td>" . $row['usu_nombres'] ."</td>";   
                                        echo "   <td>" . $row['usu_apellidos'] . "</td>";        
@@ -41,7 +43,8 @@
              $conn->close();  
                           ?>
                         </table>     
- 
+                        <a href ="eliminar.html">Eliminar</a>
+                        <a href ="actualizar.html">Actualizar</a>
                         
 </body> 
 </html> 
